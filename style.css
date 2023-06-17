@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto;
+    @media screen and (max-width: 600px) {
+        image: resolution 100%;
+    }
+        
+}
+.container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(102, 89, 89, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+   font-family: 'Handlee', cursive;
+   font-size: 21px;
+   @media (max-width: 600px) {
+      font-size: 12px;
+    }
+    height: 95%;
+    width: 95%; /* Full width */
+    padding: 20px;
+    margin-top: 5px;
+}
